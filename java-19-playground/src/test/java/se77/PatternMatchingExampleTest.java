@@ -1,6 +1,5 @@
 package se77;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static se77.PatternMatchingExamples.*;
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
