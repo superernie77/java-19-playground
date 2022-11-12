@@ -8,13 +8,15 @@ public class SwitchPatternMatchingExampleTest {
 
 	@Test
 	public void testGreetings() {
-		Employee e = new Employee("Kurt");
+		Employee e = new Employee("Wurt");
 		
 		Employee pe = new PremiumEmployee("Bert");
 		
+		Employee kurt = new PremiumEmployee("Kurt");
+		
 		Employee sce = new SecondClassEmployee("Ernie");
 		
-		List.of(e,pe,sce).forEach(SwitchPatternMatchingExample::printGreeting);
+		List.of(e,pe,sce, kurt).forEach(SwitchPatternMatchingExample::printGreeting);
 		
 	}
 }
