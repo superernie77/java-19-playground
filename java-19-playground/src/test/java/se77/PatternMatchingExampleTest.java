@@ -18,5 +18,16 @@ public class PatternMatchingExampleTest {
 		
 		assertThat(distance, closeTo(1.41d, 0.01d));
 	}
+	
+	@Test
+	public void testCalculateDistanceJava19() {
+		Point a = new Point(1, 0);
+		
+		Point b = new Point(0, 1);
+		
+		double distance = calculateDistanceJava19(a, b);
+		
+		assertThat(distance, closeTo(1.41d, 0.01d));
+	}
 
 }
