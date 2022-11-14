@@ -11,7 +11,9 @@ public class SwitchPatternMatchingExample {
 		case PremiumEmployee pe when pe.getName().equals("Kurt") -> System.out.println(pe.getName() + " is the best!");
 		
 		case PremiumEmployee pe -> System.out.println("Hello PremiumEmployee " + pe.getName() + "!");
+		
 		case SecondClassEmployee sce -> System.out.println("Hello SecondClassEmployee " + sce.getName() + "!");
+		
 		case Employee e -> System.out.println("Hello Employee " + e.getName() + "!");
 		}
 	}
