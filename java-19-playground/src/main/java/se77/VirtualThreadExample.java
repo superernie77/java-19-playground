@@ -52,11 +52,11 @@ public class VirtualThreadExample {
 		}
 
 		Instant end = Instant.now();
-		// should take only a couple of seconds to start 1 million threads
+		// should take only a couple of seconds to start and finish 1 million threads
 		System.out.println(Duration.between(begin, end).toMillis() + "ms");
 		System.out.println("# cores = " + Runtime.getRuntime().availableProcessors());
 		
-		// if you change line 30 to platform threads, the test never finishes because 1 million platform threads block the entire system
+		// if you change line 30 from ofVirtual to ofPlatform, the test never finishes because 1 million platform threads block the entire system
 
 	}
 
